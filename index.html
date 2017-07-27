@@ -4,30 +4,36 @@
         <meta charset="utf-8">
         <title>Pomodoro</title>
         <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
 
-        <div class="break">
-            <p>Break Length</p>
-            <div class="break__panel">
-                <button class="break__decrement">-</button>
-                <p class="break__p">5</p>
-                <button class="break__increment">+</button>
+        <div class="container">
+            <div class="timer">
+
             </div>
+
+            <div class="break">
+                <p>Break Length</p>
+                <div class="break__panel">
+                    <button class="break__decrement">-</button>
+                    <p class="break__p">5</p>
+                    <button class="break__increment">+</button>
+                </div>
+            </div>
+
+            <div class="session">
+                <p>Session Length</p>
+                <div class="session__panel">
+                    <button class="session__decrement">-</button>
+                    <p class="session__p">25</p>
+                    <button class="session__increment">+</button>
+                </div>
+            </div>
+
         </div>
 
-        <div class="session">
-            <p>Session Length</p>
-            <div class="session__panel">
-                <button class="session__decrement">-</button>
-                <p class="session__p">25</p>
-                <button class="session__increment">+</button>
-            </div>
-        </div>
-
-        <div class="timer">
-            
-        </div>
+        <button class="toggle__button">START</button>
 
         <script src="./model.js"></script>
         <script src="./controller.js"></script>

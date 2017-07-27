@@ -18,8 +18,8 @@ sessionIncrement.addEventListener('click', function () {
     controlSessionIncrement();
 });
 
-var timer = document.querySelector('.timer');
-timer.addEventListener('click', function () {
+var buttonToggle = document.querySelector('.toggle__button');
+buttonToggle.addEventListener('click', function () {
     controlTimer();
 });
 displayTimer();

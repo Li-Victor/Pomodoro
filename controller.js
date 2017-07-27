@@ -35,11 +35,15 @@ function controlSessionDecrement() {
 }
 
 var toggle = false;
+var buttonToggle = document.querySelector('.toggle__button');
 function controlTimer() {
     if(!toggle) {
         startTimer(document.querySelector('.timer'));
+        buttonToggle.innerText = 'STOP';
     } else {
         pauseTimer();
+        buttonToggle.innerText = 'START';
+
     }
     toggle = !toggle;
 }
