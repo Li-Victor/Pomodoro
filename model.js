@@ -77,7 +77,7 @@ function startTimer(DOMTimer) {
             timeForBreak = !timeForBreak;
 
             setTimeout(function () {
-                startTimer(DOMTimer)
+                startTimer(DOMTimer);
             }, 1000);
         }
 
